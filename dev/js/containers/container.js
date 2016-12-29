@@ -15,6 +15,7 @@ class Container extends Component {
       <div>
         <h1>Nationaal Appèlconcours</h1>
         <h2>Programma Boekje</h2>
+        <p>Melden 11:00</p>
       </div>
     )
   }
