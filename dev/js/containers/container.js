@@ -14,6 +14,7 @@ class Container extends Component {
     return (
       <div>
         <h1>Nationaal Appèlconcours</h1>
+        <h2>Programma Boekje</h2>
       </div>
     )
   }
