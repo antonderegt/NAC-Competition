@@ -1,9 +1,9 @@
 {
-  "name": "NAC competition",
+  "name": "NAC-Competition",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack",
+    "dev": "webpack && surge ./src nac.surge.sh",
     "start": "webpack-dev-server"
   },
   "license": "ISC",

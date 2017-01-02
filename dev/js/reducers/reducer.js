@@ -1,9 +1,9 @@
-import { CONSTANT } from '../actions/actions'
+import { DISPLAY, NAC } from '../actions/actions'
 
-const reducer = (state = {}, action) => {
+const reducer = (state = { display: NAC}, action) => {
   switch (action.type) {
-    case CONSTANT:
-      return state
+    case DISPLAY:
+      return {display: action.payload}
       break;
     default:
       return state
