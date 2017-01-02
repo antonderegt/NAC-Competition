@@ -13,7 +13,7 @@ class Header extends Component {
     return (
       <div>
         <header onClick={() => this.clickHandler(NAC)}>
-          <h3>{"<-"} Pleitwedstrijd </h3>
+          <h3>{this.props.state.display == NAC? "" : "<-"} Pleitwedstrijd </h3>
           {/*@TODO Right hamburger img*/}
         </header>
       </div>
@@ -22,9 +22,9 @@ class Header extends Component {
 }
 
 // Get acces to the store
-function mapStateToProps(display) {
+function mapStateToProps(state) {
   return {
-    display
+    state: state.display
   }
 }
 
@@ -33,5 +33,5 @@ function matchDispatchToProps(dispatch) {
   return bindActionCreators({actionDisplay}, dispatch)
 }
 
-// Connect store and actions to the class UserAdd
+// Connect store and actions to the class Header
 export default connect(mapStateToProps, matchDispatchToProps)(Header)

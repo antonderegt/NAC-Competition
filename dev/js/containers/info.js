@@ -7,7 +7,9 @@ class Nac extends Component {
   render() {
     return (
       <div>
-        <h1>Info</h1>
+        <h1>Informatie</h1>
+        <p>17 maart 2017</p>
+        <p>**Plattegrond**</p>
       </div>
     )
   }

@@ -1,0 +1,31 @@
+%tableBorder {
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
+table {
+	width: 100%;
+	// @extend %tableBorder;
+	// border-collapse: collapse;
+
+	th {
+		// @extend %tableBorder;
+		background-color: $secondary;
+		color: white;
+		}
+	tr {
+		&:nth-child(2n) {
+			background: lightgray;
+		}
+		&:nth-child(2n+1) {
+			background: white;
+		}
+	}
+	td {
+		// @extend %tableBorder;
+		vertical-align: center;
+	}
+	.center {
+		text-align: center;
+	}
+}
