@@ -13,10 +13,10 @@ class Nac extends Component {
         <h3>Piet is een rechter die heel slim is</h3>
         <div>
           <h2>Juryleden</h2>
-          <img src="../images/icon-1x.png" alt="Piet" />
-          <img src="../images/icon-1x.png" alt="Piet" />
-          <img src="../images/icon-1x.png" alt="Piet" />
-          <img src="../images/icon-1x.png" alt="Piet" />
+          <img src="./images/icon-1x.png" alt="Piet" />
+          <img src="./images/icon-1x.png" alt="Piet" />
+          <img src="./images/icon-1x.png" alt="Piet" />
+          <img src="./images/icon-1x.png" alt="Piet" />
         </div>
       </div>
     )
