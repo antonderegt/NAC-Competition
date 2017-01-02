@@ -1,4 +1,4 @@
-const CACHE_NAME = 'v3'
+const CACHE_NAME = 'v4'
 const CACHE_FILES = [
   './',
   './manifest.json',
@@ -86,7 +86,7 @@ self.addEventListener('fetch', function(event) {
         );
       })
         .catch(err => {
-          console.log(`[ServiceWorker] Error fetching en caching ${err}`);
+          console.log(`[ServiceWorker] Error fetching and caching ${err}`);
         })
     );
 });
