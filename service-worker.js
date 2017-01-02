@@ -1,4 +1,4 @@
-const CACHE_NAME = 'v5'
+const CACHE_NAME = 'v7'
 const CACHE_FILES = [
   './',
   './manifest.json',
