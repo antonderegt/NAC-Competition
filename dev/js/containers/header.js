@@ -13,7 +13,7 @@ class Header extends Component {
     return (
       <div>
         <header onClick={() => this.clickHandler(NAC)}>
-          <h3>Pleitwedstrijd</h3>
+          <h3>{"<-"} Pleitwedstrijd </h3>
           {/*@TODO Right hamburger img*/}
         </header>
       </div>
