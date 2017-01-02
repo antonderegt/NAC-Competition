@@ -1,12 +1,12 @@
 {
-  "name": "Nationaal Appèlconcours Competition",
+  "name": "Nationaal Appèlconcours",
   "short_name": "NAC",
   "scope": "./",
   "start_url": "index.html",
   "display": "standalone",
   "orientation": "any",
-  "theme_color": "#189BA3",
-  "background_color": "#481C19",
+  "theme_color": "#28ABB3",
+  "background_color": "#088B93",
   "icons": [{
     "src": "images/icon-0-75x.png",
     "sizes": "36x36",
