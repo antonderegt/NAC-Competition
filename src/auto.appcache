@@ -2,12 +2,15 @@ CACHE MANIFEST
 
 CACHE:
 /js/bundle.min.js
-#  c7823b8fcc98bdf437ca00d7fefe3b3a  103
+#  bundle V1
 /index.html
-#  6e54936477273554dfb7432f639e4a23  3015
+#  index V1
 /images/eggens.png
+#  eggens V1
 /images/icon-1x.png
+#  1x V1
 /images/icon-4x.png
+#  4x V1
 
 
 NETWORK:
