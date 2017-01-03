@@ -9,7 +9,7 @@ class Nac extends Component {
       <div>
         <h1>Contact</h1>
         <p>Stuur een mail naar: <b>concours@pleitgenootschap-eggens.nl</b></p>
-        <p>Meer informatie is te vinden op de site van <a href="www.pleitgenootschap-eggens.nl">Pleigenootschap Eggens</a>.</p>
+        <p>Meer informatie is te vinden op de site van <a href="https://www.pleitgenootschap-eggens.nl" target="_blank" rel="noopener">Pleigenootschap Eggens</a>.</p>
       </div>
     )
   }
