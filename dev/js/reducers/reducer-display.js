@@ -1,6 +1,6 @@
 import { DISPLAY, NAC } from '../actions/actions'
 
-const reducer = (state = { display: NAC}, action) => {
+const reducerDisplay = (state = { display: NAC}, action) => {
   switch (action.type) {
     case DISPLAY:
       return {display: action.payload}
@@ -10,4 +10,4 @@ const reducer = (state = { display: NAC}, action) => {
   }
 }
 
-export default reducer
+export default reducerDisplay

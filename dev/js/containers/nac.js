@@ -16,6 +16,7 @@ class Nac extends Component {
         <div className="box box-2" onClick={() => this.clickHandler(CHRONO)}><h3>Chronoloog</h3></div>
         <div className="box box-3" onClick={() => this.clickHandler(JURY)}><h3>Juryleden</h3></div>
         <div className="box box-4" onClick={() => this.clickHandler(CONTACT)}><h3>Contact</h3></div>
+        <img className="logo" src="./images/eggens.png" alt="Eggens"></img>
       </div>
     )
   }

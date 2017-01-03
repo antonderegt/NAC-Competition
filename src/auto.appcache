@@ -1,0 +1,17 @@
+CACHE MANIFEST
+
+CACHE:
+/js/bundle.min.js
+#  c7823b8fcc98bdf437ca00d7fefe3b3a  103
+/index.html
+#  6e54936477273554dfb7432f639e4a23  3015
+/images/eggens.png
+/images/icon-1x.png
+/images/icon-4x.png
+
+
+NETWORK:
+*
+
+FALLBACK:
+/ /index.html
