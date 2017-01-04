@@ -5,11 +5,7 @@
 
 table {
 	width: 100%;
-	// @extend %tableBorder;
-	// border-collapse: collapse;
-
 	th {
-		// @extend %tableBorder;
 		background-color: $secondary;
 		color: white;
 		}
@@ -22,7 +18,6 @@ table {
 		}
 	}
 	td {
-		// @extend %tableBorder;
 		vertical-align: center;
 	}
 	.center {

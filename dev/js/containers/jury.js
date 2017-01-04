@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { actionDisplay } from '../actions/actions'
+import { actionJuryLoad } from '../actions/actions'
 
 class Nac extends Component {
+  componentWillMount() {
+    this.props.actionJuryLoad()
+  }
   render() {
     return (
       <div>
@@ -26,13 +29,13 @@ class Nac extends Component {
 // Get acces to the store
 function mapStateToProps(state) {
   return {
-    state: state.display
+    state: state.juryMembers
   }
 }
 
 // Get acces to addUser action
 function matchDispatchToProps(dispatch) {
-  return bindActionCreators({actionDisplay}, dispatch)
+  return bindActionCreators({actionJuryLoad}, dispatch)
 }
 
 // Connect store and actions to the class UserAdd

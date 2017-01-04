@@ -6,6 +6,7 @@ import thunk from 'redux-thunk'
 import allReducers from './reducers'
 import App from './components/App'
 import Sw from './sw/app'
+import BackButton from './back-button'
 
 const middleware = [ thunk ]
 const store = createStore(

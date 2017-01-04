@@ -8,8 +8,14 @@ class Nac extends Component {
     return (
       <div>
         <h1>Contact</h1>
-        <p>Stuur een mail naar: <b>concours@pleitgenootschap-eggens.nl</b></p>
-        <p>Meer informatie is te vinden op de site van <a href="https://www.pleitgenootschap-eggens.nl" target="_blank" rel="noopener">Pleigenootschap Eggens</a>.</p>
+        <p>
+          Stuur een mail naar: <b>concours@pleitgenootschap-eggens.nl</b><br /><br />
+
+          Meer informatie is te vinden op de site van
+          <a href="https://www.pleitgenootschap-eggens.nl" target="_blank" rel="noopener"> Pleigenootschap Eggens</a>.<br /><br />
+
+          Op de dag zelf is het volgende nummer bereikbaar voor vragen: <b>06-xxxxxxxx</b>.
+        </p>
       </div>
     )
   }

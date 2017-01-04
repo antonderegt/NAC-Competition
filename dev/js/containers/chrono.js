@@ -9,68 +9,42 @@ class Nac extends Component {
       <div>
         <h1>Chronoloog</h1>
         <p>
-          <i>Ochtendprogramma 11:30 – 12:30</i><br />
-          Lunch bij Pels Rijcken & Drooglever Fortuijn <br /><br />
-          <i>Wedstrijdprogramma 13:00 – 18:00</i><br />
-          De eerste pleit ronden vangt aan om 13:30 tot 14:10.
-          De teams zullen daarna in ronde twee de zaak van de andere kant bepleiten.
-          De tweede pleitronde vangt aan om 14:25 – 15:40.
-          De finale wordt naar verwachting gehouden om 16:30 – 17:20. <br /><br />
+          <b>11:30 - 12:30</b> <i>Ochtendprogramma</i><br />
+          Lunch bij Pels Rijcken & Drooglever Fortuijn<br /><br />
 
-          <i>Avondprogramma 18:00 - 22:00</i><br />
+          <b>13:00 - 18:00</b> <i>Wedstrijdprogramma</i><br />
+        </p>
+        <table>
+          <tbody>
+            <tr>
+              <th>Tijd</th>
+              <th>Activiteit</th>
+              <th>Locatie</th>
+            </tr>
+            <tr>
+              <td>13:30 - 14:10</td>
+              <td>1e Pleitronde</td>
+              <td>Team afhankelijk</td>
+            </tr>
+            <tr>
+              <td>14:25 - 15:40</td>
+              <td>2e Pleitronde</td>
+              <td>Team afhankelijk</td>
+            </tr>
+            <tr>
+              <td>16:30 - 17:20</td>
+              <td>Finale</td>
+              <td>Volgt</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          De teams zullen in ronde twee de zaak van de andere kant bepleiten.<br /><br />
+
+          <b>18:00 - 22:00</b> <i>Avondprogramma</i><br />
           Drie gangen diner bij een restaurant op loopafstand van het gerechtshof. Meer info volgt.
         </p>
         {/*@TODO Click on location to get directions*/}
-        {/*}<table>
-          <tbody>
-          <tr>
-            <th>Tijd</th>
-            <th>Activiteit</th>
-            <th>Locatie</th>
-          </tr>
-          <tr>
-            <td>11:30 – 12:30</td>
-            <td>Lunch voor deelnemers & publiek</td>
-            <td>Pels Rijcken & Droogleever Fortuijn</td>
-          </tr>
-          <tr>
-            <td>13:00 – 13:30</td>
-            <td>Opening NAC 2017</td>
-            <td>Volgt nog</td>
-          </tr>
-          <tr>
-            <td>13:30 – 14:10</td>
-            <td>Pleitronde 1</td>
-            <td>Verschilt per team</td>
-          </tr>
-          <tr>
-            <td>14:25 – 15:40</td>
-            <td>Pleitronde 2</td>
-            <td>Verschilt per team</td>
-          </tr>
-          <tr>
-            <td>15:40 – 16:25</td>
-            <td>Borrel voor deelnemers & medewerkers van het Gerechtshof</td>
-            <td>Centrale Hal H</td>
-          </tr>
-          <tr>
-            <td>16:30 – 17:20</td>
-            <td>Finale</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>17:30 – 18:00</td>
-            <td>Prijsuitreiking en afsluiting</td>
-            <td>Centrale Hal H</td>
-          </tr>
-          <tr>
-            <td>18:00</td>
-            <td>Diner</td>
-            <td></td>
-          </tr>
-          </tbody>
-        </table>
-        */}
       </div>
     )
   }

@@ -1,9 +1,11 @@
-export const DISPLAY = 'DISPLAY'
-export const JURY = 'JURY'
 export const NAC = 'NAC'
 export const INFO = 'INFO';
 export const CHRONO = 'CHRONO';
 export const CONTACT = 'CONTACT';
+export const DISPLAY = 'DISPLAY'
+export const JURY_LOAD = 'JURY_LOAD'
+export const JURY_SELECTED = 'JURY_SELECTED'
+
 
 export const actionDisplay = payload => {
   return {
@@ -11,10 +13,9 @@ export const actionDisplay = payload => {
     payload
   }
 }
-export const actionJury = payload => {
+export const actionJuryLoad = () => {
   return {
-    type: JURY,
-    payload
+    type: JURY_LOAD
   }
 }
 // export const fetchUsersRecent = () => dispatch => {

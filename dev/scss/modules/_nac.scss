@@ -1,4 +1,5 @@
 .container {
+    padding-top: 1.7em;
     position: absolute;
     height: 100%;
     left: 10%;
@@ -11,6 +12,7 @@
       height: 21.375%;
       border: 0px solid black;
       border-radius: 8px;
+      box-shadow: 0 1px 4px #333;
       h3 {
         text-align: center;
         padding: 41% 0;

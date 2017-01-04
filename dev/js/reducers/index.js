@@ -1,11 +1,10 @@
 import { combineReducers } from 'redux'
 import reducerDisplay from './reducer-display'
-// import reducerJury from './reducer-jury'
-// ,
-// jury: reducerJury
+import reducerJury from './reducer-jury'
 
 const allReducers = combineReducers({
-  display: reducerDisplay
+  display: reducerDisplay,
+  juryMembers: reducerJury
 })
 
 export default allReducers
