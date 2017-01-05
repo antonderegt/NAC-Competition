@@ -18,6 +18,12 @@ export const actionJuryLoad = () => {
     type: JURY_LOAD
   }
 }
+export const actionJurySelect = (payload) => {
+  return {
+    type: JURY_SELECTED,
+    payload
+  }
+}
 // export const fetchUsersRecent = () => dispatch => {
 //   return Request.get(urlRecent)
 //     .then((response) => dispatch(fetchUsersAlltime(responseR.body)))

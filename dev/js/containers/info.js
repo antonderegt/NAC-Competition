@@ -2,12 +2,15 @@ import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { actionDisplay } from '../actions/actions'
+import { NAC } from '../actions/actions'
 
 class Nac extends Component {
+  mdButtonHandler() {
+    this.props.actionDisplay(NAC)
+  }
   render() {
     return (
-      <div>
-        <h1>Informatie</h1>
+      <div className="sub-container">
         <p>
           Traditiegetrouw organiseert Eggens ook dit jaar weer het Nationaal Appèlconcours.
           De vijfde editie van het NAC zal plaats vinden op vrijdag 17 maart 2017 in het
@@ -23,9 +26,10 @@ class Nac extends Component {
           als het publiek uitnodigen voor een heerlijk diner.<br /><br />
 
           Zin om deel te nemen aan deze gezellige en leerzame wedstrijden?
-          Aanmelden kan door te mailen naar: <b>concours@pleitgenootschap-eggens.nl</b>. 
+          Aanmelden kan door te mailen naar: <b>concours@pleitgenootschap-eggens.nl</b>.
           Inschrijven is mogelijk tot uiterlijk 17 januari 2017.
         </p>
+        <div onClick={() => this.mdButtonHandler()} className="md-button"><h3>X</h3></div>
       </div>
     )
   }

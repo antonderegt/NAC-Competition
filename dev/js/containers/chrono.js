@@ -2,12 +2,15 @@ import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { actionDisplay } from '../actions/actions'
+import { NAC } from '../actions/actions'
 
 class Nac extends Component {
+  mdButtonHandler() {
+    this.props.actionDisplay(NAC)
+  }
   render() {
     return (
-      <div>
-        <h1>Chronoloog</h1>
+      <div className="sub-container">
         <p>
           <b>11:30 - 12:30</b> <i>Ochtendprogramma</i><br />
           Lunch bij Pels Rijcken & Drooglever Fortuijn<br /><br />
@@ -45,6 +48,7 @@ class Nac extends Component {
           Drie gangen diner bij een restaurant op loopafstand van het gerechtshof. Meer info volgt.
         </p>
         {/*@TODO Click on location to get directions*/}
+        <div onClick={() => this.mdButtonHandler()} className="md-button"><h3>X</h3></div>
       </div>
     )
   }

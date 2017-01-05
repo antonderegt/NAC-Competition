@@ -11,7 +11,6 @@ class Nac extends Component {
   render() {
     return (
       <div>
-        <h1>Nationaal Appèlconcours</h1>
         <div className="box box-1" onClick={() => this.clickHandler(INFO)}><h3>Informatie</h3></div>
         <div className="box box-2" onClick={() => this.clickHandler(CHRONO)}><h3>Chronoloog</h3></div>
         <div className="box box-3" onClick={() => this.clickHandler(JURY)}><h3>Juryleden</h3></div>

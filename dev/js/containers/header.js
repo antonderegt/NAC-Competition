@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { actionDisplay } from '../actions/actions'
-import { NAC } from '../actions/actions'
+import { NAC, INFO, CHRONO, JURY, CONTACT } from '../actions/actions'
 
 
 class Header extends Component {
@@ -13,7 +13,13 @@ class Header extends Component {
     return (
       <div>
         <header onClick={() => this.clickHandler(NAC)}>
-          <h3>{this.props.state.display == NAC? "17 maart 2017" : "<- Terug naar beginscherm"}</h3>
+          <h3>{
+              this.props.state.display == INFO ? "Informatie" :
+              this.props.state.display == CHRONO ? "Chronoloog" :
+              this.props.state.display == JURY ? "Juryleden" :
+              this.props.state.display == CONTACT ? "Contact" :
+              "Nationaal Appèlconcours"
+            }</h3>
           {/*@TODO Right hamburger img*/}
         </header>
       </div>
