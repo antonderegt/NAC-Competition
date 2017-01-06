@@ -5,6 +5,7 @@
 }
 %boxStyling {
   @extend %border;
+  background-color: $button1;
 }
 .flexContainerColumn {
   margin-top: 2.2em;
