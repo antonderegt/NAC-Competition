@@ -10,11 +10,15 @@ class Nac extends Component {
   }
   render() {
     return (
-      <div>
-        <div className="box box-1" onClick={() => this.clickHandler(INFO)}><h3>Informatie</h3></div>
-        <div className="box box-2" onClick={() => this.clickHandler(CHRONO)}><h3>Chronoloog</h3></div>
-        <div className="box box-3" onClick={() => this.clickHandler(JURY)}><h3>Juryleden</h3></div>
-        <div className="box box-4" onClick={() => this.clickHandler(CONTACT)}><h3>Contact</h3></div>
+      <div className="flexContainerColumn">
+        <div className="flexContainerRow">
+          <div className="flexItem" onClick={() => this.clickHandler(INFO)}><h3>Informatie</h3></div>
+          <div className="flexItem" onClick={() => this.clickHandler(CHRONO)}><h3>Chronoloog</h3></div>
+        </div>
+        <div className="flexContainerRow">
+          <div className="flexItem" onClick={() => this.clickHandler(JURY)}><h3>Juryleden</h3></div>
+          <div className="flexItem" onClick={() => this.clickHandler(CONTACT)}><h3>Contact</h3></div>
+        </div>
         <img className="logo" src="./images/eggens.png" alt="Eggens"></img>
       </div>
     )
