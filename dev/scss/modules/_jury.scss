@@ -19,7 +19,6 @@
 
 .jury-small {
   @extend %jury;
-  // background-color: lightgray;
   .jury-desc {
     float: left;
     p {
@@ -30,11 +29,19 @@
 
 .jury-big {
   @extend %jury;
+  display: flex;
+  flex-direction: column;
   background-color: $secondary;
-  .jury-desc {
+  .jury-big-info {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+  }
+  .jury-big-desc {
+    flex: 2;
     p {
-      margin: .3em .3em 0 .3em;
-      text-align: justify;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }

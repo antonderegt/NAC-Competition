@@ -21,14 +21,16 @@ class Nac extends Component {
           if(jury.id == this.props.state.jurySelected.id) {
             return (
               <div key={jury.id} className="jury-big" onClick={() => {this.juryClickHandler(jury)}}>
+                <div className="jury-big-info">
                   <img src={jury.img} alt={jury.name}/>
-                <div className="jury-name">
-                  <h2 key={jury.id}>{jury.name}</h2>
+                  <div className="jury-name">
+                    <h2 key={jury.id}>{jury.name}</h2>
+                  </div>
                 </div>
-              <div key={jury.name} className="jury-desc">
-                <p key={jury.id}>{jury.descLong}</p>
+                <div key={jury.name} className="jury-big-desc">
+                  <p key={jury.id}>{jury.descLong}</p>
+                </div>
               </div>
-            </div>
             )
           } else {
             return (
