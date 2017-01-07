@@ -19,7 +19,7 @@ class Nac extends Component {
           <div className="flexItem" onClick={() => this.clickHandler(JURY)}><h3>Juryleden</h3></div>
           <div className="flexItem" onClick={() => this.clickHandler(CONTACT)}><h3>Contact</h3></div>
         </div>
-        <img className="logo" src="./images/eggens.png" alt="Eggens"></img>
+          <img className="logo" src="./images/eggens.png" alt="Eggens"></img>
       </div>
     )
   }
