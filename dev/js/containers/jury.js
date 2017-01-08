@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { actionDisplay, actionJuryLoad, actionJurySelect } from '../actions/actions'
 import { NAC } from '../actions/actions'
 
-class Nac extends Component {
+class Jury extends Component {
   componentWillMount() {
     this.props.actionJuryLoad()
   }
@@ -55,7 +55,6 @@ class Nac extends Component {
 // Get acces to the store
 function mapStateToProps(state) {
   return {
-    state: state.display,
     state: state.juryMembers
   }
 }
@@ -66,4 +65,4 @@ function matchDispatchToProps(dispatch) {
 }
 
 // Connect store and actions to the class UserAdd
-export default connect(mapStateToProps, matchDispatchToProps)(Nac)
+export default connect(mapStateToProps, matchDispatchToProps)(Jury)
