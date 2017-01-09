@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Container from '../containers/container'
-import Header from '../containers/header'
+import Header from '../containers/container-header'
 
 require('../../scss/style.scss')
 

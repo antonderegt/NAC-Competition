@@ -1,4 +1,4 @@
-export const NAC = 'NAC'
+export const HOME = 'HOME'
 export const INFO = 'INFO';
 export const CHRONO = 'CHRONO';
 export const CONTACT = 'CONTACT';
@@ -24,7 +24,3 @@ export const actionJurySelect = (payload) => {
     payload
   }
 }
-// export const fetchUsersRecent = () => dispatch => {
-//   return Request.get(urlRecent)
-//     .then((response) => dispatch(fetchUsersAlltime(responseR.body)))
-// }

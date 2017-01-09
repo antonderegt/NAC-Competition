@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { actionDisplay, NAC } from '../actions/actions'
-import Text from '../components/component-text'
+import { actionDisplay, HOME } from '../actions/actions'
+import PageComponent from '../components/component-page'
 
-class Info extends Component {
+class Page extends Component {
   render() {
     let title = this.props.display
     return (
-      <Text
+      <PageComponent
         title={title}
         text={this.props.text[title]}
         onClick={() => {
-          this.props.actionDisplay(NAC)
+          this.props.actionDisplay(HOME)
         }}
       />
     )
@@ -33,4 +33,4 @@ function matchDispatchToProps(dispatch) {
 }
 
 // Connect store and actions to the class UserAdd
-export default connect(mapStateToProps, matchDispatchToProps)(Info)
+export default connect(mapStateToProps, matchDispatchToProps)(Page)
