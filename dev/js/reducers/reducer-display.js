@@ -17,7 +17,7 @@ const infoText = <p>
   Gerechtshof te ‘s-Gravenhage.<br /><br />
 
   In het Nationaal Appèlconcours draait het om het bepleiten van een zaak in
-  hoger beroep. Alle teams krijgen de gelegenheid om zaak zowel van de kant van
+  hoger beroep. Alle teams krijgen de gelegenheid om de zaak zowel van de kant van
   de appellant als van de geïntimeerde te bepleiten.
 
   <br /><br />De dag begint voor de deelnemers en juridische aangelegd publiek
