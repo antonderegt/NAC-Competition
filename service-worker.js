@@ -1,21 +1,21 @@
-const CACHE_NAME = 'v11'
+const CACHE_NAME = 'v12'
 const CACHE_FILES = [
   './',
   './manifest.json',
   './index.html',
   './js/bundle.min.js',
   './images/icon-1x.png',
-  './images/icon-4x.png',
-  './images/eggens.png'
+  './images/eggens.png',
+  './images/ic_arrow_back_white_24dp.png'
 ]
 
 self.addEventListener('install', e => {
-  console.log("[ServiceWorker] Installed")
+  // console.log("[ServiceWorker] Installed")
 
   e.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
-        console.log("[ServiceWorker] Caching cacheFiles")
+        // console.log("[ServiceWorker] Caching cacheFiles")
         return cache.addAll(CACHE_FILES)
       })
   )
@@ -23,14 +23,14 @@ self.addEventListener('install', e => {
 
 // Make sure right version op cache is used
 self.addEventListener('activate', e => {
-  console.log("[ServiceWorker] Activated");
+  // console.log("[ServiceWorker] Activated");
 
   e.waitUntil(
     caches.keys()
       .then(cacheNames => {
         return Promise.all(cacheNames.map(thisCacheName => {
           if(thisCacheName !== CACHE_NAME) {
-            console.log(`[ServiceWorker] Removing Cached files from ${thisCacheName}`)
+            // console.log(`[ServiceWorker] Removing Cached files from ${thisCacheName}`)
             return caches.delete(thisCacheName)
           }
         }))
@@ -44,7 +44,7 @@ self.addEventListener('fetch', function(event) {
     caches.match(event.request)
       .then(function(response) {
         // Cache hit - return response
-        console.log("[ServiceWorker] Fetched", event.request.url);
+        // console.log("[ServiceWorker] Fetched", event.request.url);
         if (response) {
           return response;
         }
@@ -60,7 +60,7 @@ self.addEventListener('fetch', function(event) {
             // Check if we received a valid response
             // Deleted: || response.status !== 200 || response.type !== 'basic'
             if(!response) {
-              console.log("[SW] No response", response);
+              // console.log("[SW] No response", response);
               return response;
             }
 
@@ -72,7 +72,7 @@ self.addEventListener('fetch', function(event) {
 
             caches.open(CACHE_NAME)
               .then(function(cache) {
-                console.log("[SW] Putting", responseToCache);
+                // console.log("[SW] Putting", responseToCache);
                 cache.put(event.request, responseToCache);
               });
 
@@ -81,46 +81,7 @@ self.addEventListener('fetch', function(event) {
         );
       })
         .catch(err => {
-          console.log(`[ServiceWorker] Error fetching and caching ${err}`);
+          // console.log(`[ServiceWorker] Error fetching and caching ${err}`);
         })
     );
 });
-
-
-
-
-//---------------------
-/*
-self.addEventListener('fetch', e => {
-  // console.log("[ServiceWorker], fetched", e.request.url);
-
-  e.respondWith(
-    caches.match(e.request)
-      .then(response => {
-        if(response) {
-          console.log(`[ServiceWorker] Found in cache ${response.url}`);
-          return response
-        }
-
-        const requestClone = e.request.clone()
-        fetch(requestClone)
-          .then(response => {
-            if(!response) {
-              console.log("[ServiceWorker] No response from fetch")
-              return response
-            }
-
-            const responseClone = response.clone()
-            caches.open(CACHE_NAME)
-              .then(cache => {
-                cache.put(e.request, responseClone)
-                return response
-              })
-          })
-            .catch(err => {
-              console.log(`[ServiceWorker] Error fetching en caching ${err}`);
-            })
-      })
-  )
-})
-*/

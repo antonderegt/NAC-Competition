@@ -2,15 +2,15 @@ CACHE MANIFEST
 
 CACHE:
 ./js/bundle.min.js
-#  bundle V1
+#  bundle V11
 ./index.html
-#  index V1
+#  index V11
 ./images/eggens.png
-#  eggens V1
+#  eggens V11
 ./images/icon-1x.png
-#  1x V1
-./images/icon-4x.png
-#  4x V1
+#  1x V11
+./images/ic_arrow_back_white_24dp.png
+#  arrow V11
 
 
 NETWORK:
