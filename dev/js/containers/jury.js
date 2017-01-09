@@ -11,7 +11,7 @@ class Jury extends Component {
   juryClickHandler(jury) {
     this.props.actionJurySelect(jury)
   }
-  mdButtonHandler() {
+  arrowBackHandler() {
     this.props.actionDisplay(NAC)
   }
   render() {
@@ -20,7 +20,7 @@ class Jury extends Component {
         {this.props.state.juryMembers.map(jury => {
           if(jury.id == this.props.state.jurySelected.id) {
             return (
-              <div key={jury.id} className="jury-big" onClick={() => {this.juryClickHandler(jury)}}>
+              <div key={jury.id} className="jury-big" onClick={() => this.juryClickHandler(jury)}>
                 <div className="jury-big-info">
                   <img src={jury.img} alt={jury.name}/>
                   <div className="jury-name">
@@ -34,7 +34,7 @@ class Jury extends Component {
             )
           } else {
             return (
-              <div key={jury.id} className="jury-small" onClick={() => {this.juryClickHandler(jury)}}>
+              <div key={jury.id} className="jury-small" onClick={() => this.juryClickHandler(jury)}>
                 <img src={jury.img} alt={jury.name}/>
                 <div className="jury-name">
                   <h3 key={jury.id}>{jury.name}</h3>
@@ -46,7 +46,7 @@ class Jury extends Component {
             )
           }
         })}
-        <div onClick={() => this.mdButtonHandler()} className="md-button"><h3>X</h3></div>
+        <div onClick={() => this.arrowBackHandler()} className="arrowBack"><img src="./images/ic_arrow_back_white_24dp_1x.png"/></div>
       </div>
     )
   }

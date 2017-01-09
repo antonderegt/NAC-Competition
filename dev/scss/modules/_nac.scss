@@ -10,10 +10,6 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row;
     justify-content: space-around;
@@ -24,7 +20,6 @@
   flex: 1 0 50%;
   height: auto;
 
-  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
