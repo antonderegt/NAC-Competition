@@ -2,21 +2,21 @@ import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { actionDisplay } from '../actions/actions'
-import { NAC, INFO, CHRONO, JURY, CONTACT } from '../actions/actions'
-import Nac from './nac'
-import Text from './container-text'
-import Jury from './jury'
+import { HOME, INFO, CHRONO, JURY, CONTACT } from '../actions/actions'
+import Home from './container-home'
+import Page from './container-page'
+import Jury from './container-jury'
 
 class Container extends Component {
   render() {
     return (
       <div className="container">
         {
-          this.props.display == NAC ?
-            <Nac /> :
+          this.props.display == HOME ?
+            <Home /> :
             this.props.display == JURY ?
                 <Jury /> :
-            <Text display={this.props.display} />
+            <Page display={this.props.display} />
         }
       </div>
     )

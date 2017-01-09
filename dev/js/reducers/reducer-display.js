@@ -1,5 +1,5 @@
 import React from 'react'
-import { DISPLAY, NAC } from '../actions/actions'
+import { DISPLAY, HOME } from '../actions/actions'
 
 const reducerDisplay = (state = initialState, action) => {
   switch (action.type) {
@@ -77,7 +77,7 @@ const contactText = <p>
 </p>
 
 const initialState = {
-  display: NAC,
+  display: HOME,
   INFO: infoText,
   CHRONO: chronoText,
   CONTACT: contactText
