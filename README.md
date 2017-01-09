@@ -4,4 +4,10 @@ NAC stands for [Nationaal Appèlconcours](https://www.pleitwedstrijd.nl/), which
 
 This app is a program guide for the competition.
 
-Check out the [App](https://antonderegt.github.io/NAC-Competition/) here!
+*Android users*
+The app works offline!!
+Check out the [App](https://antonderegt.github.io/nac/) here!
+
+*Iphone users*
+The app also works offline!!
+But you should check out this link to the [App](https://nac.surge.sh/) here!
