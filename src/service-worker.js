@@ -6,7 +6,7 @@ const CACHE_FILES = [
   './js/bundle.min.js',
   './images/icon-1x.png',
   './images/eggens.png',
-  './images/ic_arrow_back_white_24dp.png'
+  './images/ic_arrow_back_white_24dp_1x.png'
 ]
 
 self.addEventListener('install', e => {
