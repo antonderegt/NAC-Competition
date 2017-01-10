@@ -4,8 +4,8 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import allReducers from './reducers'
 import App from './components/App'
-import Sw from './sw/app'
-import BackButton from './back-button'
+// import Sw from './sw/app'
+// import BackButton from './back-button'
 
 const store = createStore(
   allReducers

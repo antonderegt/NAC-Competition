@@ -1,6 +1,18 @@
 import { JURY, JURY_SELECTED, JURY_LOAD } from '../actions/actions'
 
-const reducerJury = (state = {
+const reducerJury = (state = initialState, action) => {
+  switch (action.type) {
+    case JURY_SELECTED:
+      return Object.assign({}, state, {jurySelected: action.payload})
+      break;
+    case JURY_LOAD:
+      return state
+    default:
+      return state
+  }
+}
+
+const initialState = {
   juryMembers: [
     {id: 0, name: "Piet1", descShort: "Rechter 1", descLong: "Goeie rechter 1 Goeie rechter 1 Goeie rechter 1 Goeie rechter 1 Goeie rechter 1 Goeie rechter 1", img: "./images/icon-1x.png"},
     {id: 1, name: "Piet2", descShort: "Rechter 2", descLong: "Goeie rechter 2 Goeie rechter 2 Goeie rechter 2 Goeie rechter 2 Goeie rechter 2 Goeie rechter 2", img: "./images/icon-1x.png"},
@@ -12,16 +24,6 @@ const reducerJury = (state = {
     {id: 7, name: "Klaas4", descShort: "Advocaat 4", descLong: "Slechte advocaat 1 Slechte advocaat 1 Slechte advocaat 1 Slechte advocaat 1 Slechte advocaat 1 Slechte advocaat 1 Slechte advocaat 1 Slechte advocaat 1 Slechte advocaat 1 Slechte advocaat 1 Slechte advocaat 1 Slechte advocaat 1 Slechte advocaat 1 Slechte advocaat 1 Slechte advocaat 4 Slechte advocaat 4 Slechte advocaat 4 Slechte advocaat 4 Slechte advocaat 4 Slechte advocaat 4 Slechte advocaat 4", img: "./images/icon-1x.png"}
   ],
   jurySelected: {id: 0, name: "Piet", descShort: "Rechter", descLong: "Goeie rechter", img: "./images/icon-1x.png"}
-}, action) => {
-  switch (action.type) {
-    case JURY_SELECTED:
-      return Object.assign({}, state, {jurySelected: action.payload})
-      break;
-    case JURY_LOAD:
-      return state
-    default:
-      return state
-  }
 }
 
 export default reducerJury

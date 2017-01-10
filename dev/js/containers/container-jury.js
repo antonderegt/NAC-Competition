@@ -50,8 +50,8 @@ class Jury extends Component {
 // Get acces to the store
 function mapStateToProps(state) {
   return {
-    juryMembers: state.juryMembers.juryMembers,
-    jurySelected: state.juryMembers.jurySelected
+    juryMembers: state.jury.juryMembers,
+    jurySelected: state.jury.jurySelected
   }
 }
 

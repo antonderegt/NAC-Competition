@@ -1,20 +1,15 @@
-%tableBorder {
-	border: 1px solid black;
-	border-radius: 8px;
-}
-
 table {
 	width: 100%;
 	th {
 		background-color: $secondary;
-		color: white;
+		color: #F4F4F4;
 		}
 	tr {
 		&:nth-child(2n) {
-			background: lightgray;
+			background: #D6D6D6;
 		}
 		&:nth-child(2n+1) {
-			background: white;
+			background: #F4F4F4;
 		}
 	}
 	td {
@@ -22,5 +17,15 @@ table {
 	}
 	.center {
 		text-align: center;
+	}
+}
+
+.selectTeamP {
+	margin-bottom: .3em;
+	.selectTeam {
+		width: 100%;
+		margin-top: .3em;
+		font-size: 1em;
+		background: #F4F4F4;
 	}
 }

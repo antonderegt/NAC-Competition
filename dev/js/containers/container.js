@@ -6,6 +6,7 @@ import { HOME, INFO, CHRONO, JURY, CONTACT } from '../actions/actions'
 import Home from './container-home'
 import Page from './container-page'
 import Jury from './container-jury'
+import Chrono from './container-chrono'
 
 class Container extends Component {
   render() {
@@ -14,9 +15,11 @@ class Container extends Component {
         {
           this.props.display == HOME ?
             <Home /> :
-            this.props.display == JURY ?
-                <Jury /> :
-            <Page display={this.props.display} />
+          this.props.display == JURY ?
+            <Jury /> :
+          this.props.display == CHRONO ?
+            <Chrono /> :
+          <Page display={this.props.display} />
         }
       </div>
     )
