@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { HOME, actionDisplay, actionJuryLoad, actionJurySelect } from '../actions/actions'
+import { HOME, actionDisplay, actionJurySelect } from '../actions/actions'
 import JuryComponent from '../components/component-jury'
 
 class Jury extends Component {
-  componentWillMount() {
-    this.props.actionJuryLoad()
-  }
   arrowBackHandler() {
     this.props.actionDisplay(HOME)
   }
@@ -57,7 +54,7 @@ function mapStateToProps(state) {
 
 // Get acces to addUser action
 function matchDispatchToProps(dispatch) {
-  return bindActionCreators({actionDisplay, actionJuryLoad, actionJurySelect}, dispatch)
+  return bindActionCreators({actionDisplay, actionJurySelect}, dispatch)
 }
 
 // Connect store and actions to the class UserAdd

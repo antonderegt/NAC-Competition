@@ -5,8 +5,6 @@ const reducerJury = (state = initialState, action) => {
     case JURY_SELECTED:
       return Object.assign({}, state, {jurySelected: action.payload})
       break;
-    case JURY_LOAD:
-      return state
     default:
       return state
   }

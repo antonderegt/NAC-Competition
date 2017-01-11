@@ -27,7 +27,7 @@ const infoText = <p>
 
   Zin om deel te nemen aan deze gezellige en leerzame wedstrijden?
   Aanmelden kan door te mailen naar: <b>concours@pleitgenootschap-eggens.nl</b>.
-  Inschrijven is mogelijk tot uiterlijk 17 januari 2017.
+  Inschrijven is mogelijk tot uiterlijk 24 januari 2017.
 </p>
 
 const contactText = <p>

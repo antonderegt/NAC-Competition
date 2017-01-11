@@ -10,10 +10,10 @@ module.exports = {
     devtool: 'cheap-module-source-map',
     entry: './dev/js/index.js',
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
-                loaders: ['babel'],
+                loaders: ['babel-loader'],
                 exclude: /node_modules/
             },
             {

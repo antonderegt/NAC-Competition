@@ -30,7 +30,7 @@
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "superagent": "^3.3.1",
-    "webpack": "^1.13.1",
+    "webpack": "^2.1",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-dev-server": "^1.14.1",
     "webpack-hot-middleware": "^2.11.0"
@@ -38,6 +38,8 @@
   "devDependencies": {
     "babel-plugin-react-transform": "^2.0.2",
     "babel-preset-stage-0": "^6.5.0",
-    "react-transform-hmr": "^1.0.4"
+    "idb": "^2.0.0",
+    "react-transform-hmr": "^1.0.4",
+    "webpack": "^2.2.0-rc.3"
   }
 }
