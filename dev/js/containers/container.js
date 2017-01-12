@@ -4,7 +4,8 @@ import { connect } from 'react-redux'
 import { actionDisplay } from '../actions/actions'
 import { HOME, INFO, CHRONO, JURY, CONTACT } from '../actions/actions'
 import Home from './container-home'
-import Page from './container-page'
+import Info from './container-info'
+import Contact from './container-contact'
 import Jury from './container-jury'
 import Chrono from './container-chrono'
 
@@ -19,7 +20,9 @@ class Container extends Component {
             <Jury /> :
           this.props.display == CHRONO ?
             <Chrono /> :
-          <Page display={this.props.display} />
+          this.props.display == INFO ?
+            <Info /> :
+          <Contact />
         }
       </div>
     )

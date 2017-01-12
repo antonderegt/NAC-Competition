@@ -2,18 +2,17 @@ import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { actionDisplay, HOME } from '../actions/actions'
-import PageComponent from '../components/component-page'
+import InfoComponent from '../components/component-info'
 
-class Page extends Component {
+class Info extends Component {
+  actionDisplay() {
+    this.props.actionDisplay(HOME)
+  }
   render() {
-    let title = this.props.display
     return (
-      <PageComponent
-        title={title}
-        text={this.props.text[title]}
-        onClick={() => {
-          this.props.actionDisplay(HOME)
-        }}
+      <InfoComponent
+        title={this.props.display}
+        onClick={() => this.actionDisplay()}
       />
     )
   }
@@ -22,8 +21,7 @@ class Page extends Component {
 // Get acces to the store
 const mapStateToProps = (state) => {
   return {
-    display: state.display.display,
-    text: state.display
+    display: state.display.display
   }
 }
 
@@ -33,4 +31,4 @@ function matchDispatchToProps(dispatch) {
 }
 
 // Connect store and actions to the class UserAdd
-export default connect(mapStateToProps, matchDispatchToProps)(Page)
+export default connect(mapStateToProps, matchDispatchToProps)(Info)
