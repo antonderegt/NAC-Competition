@@ -7,7 +7,6 @@ import App from './components/App'
 import Sw from './app'
 import BackButton from './back-button'
 
-
 const store = createStore(
   allReducers
 )

@@ -3,32 +3,29 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { HOME, actionTeamSelect, actionDisplay } from '../actions/actions'
 import ChronoComponent from '../components/component-chrono'
-import idb from 'idb'
 
 class Chrono extends Component {
-  componentWillMount() {
-    let dbPromise = idb.open('team-db', 1, upgradeDb => {
-      let keyValStore = upgradeDb.createObjectStore('teamName')
-    }).then(db => {
-      let tx = db.transaction('teamName')
-      let keyValStore = tx.objectStore('teamName')
-      return keyValStore.get('team')
-    }).then(team => {
-      this.props.actionTeamSelect(team)
-    })
+  componentDidMount() {
+    let team;
+    if (localStorage.getItem("team") != null) {
+      team = localStorage.getItem("team")
+    } else {
+      team = "Selecteer team..."
+    }
+    this.actionTeamSelect(team)
   }
   arrowBackHandler() {
     this.props.actionDisplay(HOME)
   }
   actionTeamSelect(e) {
-    this.props.actionTeamSelect(e.target.value)
+    this.props.actionTeamSelect(e)
   }
   render() {
     return (
       <ChronoComponent
         teams={this.props.teams}
         teamSelected={this.props.teamSelected}
-        actionTeamSelect={e => {this.actionTeamSelect(e)}}
+        actionTeamSelect={e => {this.actionTeamSelect(e.target.value)}}
         onClick={() => {this.arrowBackHandler()}}/>
     )
   }

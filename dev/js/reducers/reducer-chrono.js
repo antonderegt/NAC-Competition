@@ -1,26 +1,10 @@
 import React from 'react'
 import { TEAM_SELECT } from '../actions/actions'
-import idb from 'idb'
-
-// Make db
-let dbPromise = idb.open('team-db', 1, upgradeDb => {
-  let keyValStore = upgradeDb.createObjectStore('teamName')
-  keyValStore.put('Selecteer team...', 'team')
-})
-
-// Add to db
-function changeTeam(team) {dbPromise.then((db) => {
-  let tx = db.transaction('teamName', 'readwrite')
-  let keyValStore = tx.objectStore('teamName')
-  keyValStore.put(team, 'team')
-  return tx.complete
-})
-}
 
 const reducerChrono = (state = initialState, action) => {
   switch (action.type) {
     case TEAM_SELECT:
-      changeTeam(action.payload)
+      localStorage.setItem("team", action.payload);
       return Object.assign({}, state, {teamSelected: action.payload})
       break;
     default:

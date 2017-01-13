@@ -1,5 +1,5 @@
-if ('serviceWorker' in navigator && 'PushManager' in window) {
-// console.log('Service Worker and Push is supported');
+if ('serviceWorker' in navigator) {
+
   navigator.serviceWorker
     .register('./service-worker.js', { scope: './' })
     .then(registration => {
@@ -9,7 +9,4 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
       // console.log("SW failed registration", err);
     })
 
-} else {
-  // console.warn('Push messaging is not supported');
-  pushButton.textContent = 'Push Not Supported';
 }
