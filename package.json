@@ -38,7 +38,6 @@
   "devDependencies": {
     "babel-plugin-react-transform": "^2.0.2",
     "babel-preset-stage-0": "^6.5.0",
-    "idb": "^2.0.0",
     "react-transform-hmr": "^1.0.4",
     "webpack": "^2.2.0-rc.3"
   }

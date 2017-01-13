@@ -6,7 +6,7 @@ const ContactComponent = (props) => (
       Stuur een mail naar: <b>concours@pleitgenootschap-eggens.nl</b><br /><br />
 
       Meer informatie is te vinden op de site van:&nbsp;
-      <a href="https://www.pleitgenootschap-eggens.nl" target="_blank" rel="noopener">Pleigenootschap Eggens</a>.<br /><br />
+      <a href="https://www.pleitgenootschap-eggens.nl" target="_blank" rel="noopener">Pleitgenootschap Eggens</a>.<br /><br />
 
       Op de dag zelf is het volgende nummer bereikbaar voor vragen: <b>06-xxxxxxxx</b>.
     </p>
