@@ -1,8 +1,8 @@
 $primary:           #E6625E;//#28ABB3;
-$secondary:         #E13334;//#088B93;
-$button1:           #F6F3EB;//B6CAC0;
-$button2:           #EEE7D7;//C6D7C7;
-$button3:           #EEE7D7;//96CBD1;
-$button4:           #F9F7E8;//BEDFD4;
+$secondary:         darken($primary, 5%);//#E13334;//#088B93;
+$button1:           #EEE7D7;//F6F3EB;//B6CAC0;
+$button2:           darken($button1, 5%);//#EEE7D7;//C6D7C7;
+$button3:           darken($button1, 5%);//#EEE7D7;//96CBD1;
+$button4:           $button1;//#F9F7E8;//BEDFD4;
 $md-btn-text:       #f1f1f1;
 $md-btn-bg:         #D9BAAD;//#E40A5D;
