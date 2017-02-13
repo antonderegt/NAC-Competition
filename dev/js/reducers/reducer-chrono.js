@@ -15,13 +15,14 @@ const reducerChrono = (state = initialState, action) => {
 const initialState = {
   teams: [
     {name: "Selecteer team...", locationOne: "Selecteer team", locationTwo: "Selecteer team"},
-    {name: "Team 1", locationOne: "Grote zaal", locationTwo: "Ronde zaal"},
-    {name: "Team 2", locationOne: "Kleine zaal", locationTwo: "Vierkante zaal"},
-    {name: "Team 3", locationOne: "Middel zaal", locationTwo: "Gele zaal"},
-    {name: "Team 4", locationOne: "Giga zaal", locationTwo: "Ovale zaal"},
-    {name: "Team 5", locationOne: "Mega zaal", locationTwo: "Oranje zaal"},
-    {name: "Team 6", locationOne: "Mini zaal", locationTwo: "Advocaten zaal"},
-    {name: "Team 7", locationOne: "Gewone zaal", locationTwo: "Andere zaal"}
+    {name: "Cicero", locationOne: "Zaal 3", locationTwo: "Zaal 3"},
+    {name: "DiCiT", locationOne: "Zaal 4", locationTwo: "Zaal 2"},
+    {name: "Diephuis I", locationOne: "Zaal 1", locationTwo: "Zaal 3"},
+    {name: "Diephuis II", locationOne: "Zaal 4", locationTwo: "Zaal 1"},
+    {name: "Eggens I", locationOne: "Zaal 1", locationTwo: "Zaal 2"},
+    {name: "Eggens II", locationOne: "Zaal 2", locationTwo: "Zaal 4"},
+    {name: "Eggens III", locationOne: "Zaal 3", locationTwo: "Zaal 1"},
+    {name: "Rota Carolina", locationOne: "Zaal 2", locationTwo: "Zaal 4"}
   ],
   teamSelected: "Selecteer team..."
 }
