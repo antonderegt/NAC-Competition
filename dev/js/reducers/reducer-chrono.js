@@ -19,8 +19,8 @@ const initialState = {
     {name: "DiCiT", locationOne: "Zaal 4", locationTwo: "Zaal 2"},
     {name: "Diephuis I", locationOne: "Zaal 1", locationTwo: "Zaal 3"},
     {name: "Diephuis II", locationOne: "Zaal 4", locationTwo: "Zaal 1"},
-    {name: "Eggens I", locationOne: "Zaal 1", locationTwo: "Zaal 2"},
-    {name: "Eggens II", locationOne: "Zaal 2", locationTwo: "Zaal 4"},
+    {name: "Eggens I", locationOne: "Zaal 1", locationTwo: "Zaal 4"},
+    {name: "Eggens II", locationOne: "Zaal 2", locationTwo: "Zaal 2"},
     {name: "Eggens III", locationOne: "Zaal 3", locationTwo: "Zaal 1"},
     {name: "Rota Carolina", locationOne: "Zaal 2", locationTwo: "Zaal 4"}
   ],
