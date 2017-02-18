@@ -21,7 +21,8 @@
   right: 25px;
   width: 3.5em;
   height: 3.5em;
-  background-color: $md-btn-bg;
+  background: $md-btn-bg;
+  color: $md-btn-text;
   border: none;
   border-radius: 50%;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);

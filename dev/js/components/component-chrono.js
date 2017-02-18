@@ -65,7 +65,7 @@ const ChronoComponent = (props) => (
     <p>
       De teams zullen in ronde twee de zaak van de andere kant bepleiten.<br /><br />
       <b>18:00 - 22:00</b> <i>Avondprogramma</i><br />
-      Drie gangen diner bij een restaurant op loopafstand van het gerechtshof. Meer info volgt.
+      Drie gangen diner bij restaurant Luden op 15 minuten lopen van het gerechtshof.
     </p>
     <div onClick={() => props.onClick()} className="arrowBack"><img src="./images/ic_arrow_back_white_24dp_1x.png" /></div>
   </div>

@@ -16,9 +16,9 @@ const InfoComponent = (props) => (
       in Den Haag. Om de dag in goed gezelschap af te sluiten willen wij zowel de deelnemers
       als het publiek uitnodigen voor een heerlijk diner.<br /><br />
 
-      Zin om deel te nemen aan deze gezellige en leerzame wedstrijden?
-      Aanmelden kan door te mailen naar: <b>concours@pleitgenootschap-eggens.nl</b>.
-      Inschrijven is mogelijk tot uiterlijk 24 januari 2017.
+    De lustrumeditie van het Nationaal Appèlconcours 2017 staat dit jaar in het teken van het <b>vergeetrecht</b>!
+      De casus is verzonden naar de deelnemers en vanaf nu ook te vinden op <a href="https://www.pleitwedstrijd.nl" target="_blank" rel="noopener">Pleitwedstrijd.nl</a>
+
     </p>
     <div onClick={() => props.onClick()} className="arrowBack"><img src="./images/ic_arrow_back_white_24dp_1x.png" /></div>
   </div>

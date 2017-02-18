@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeaderComponent = (props) => (
   <header onClick={props.onClick}>
-    <h3>{props.title}</h3>
+    <h2>{props.title}</h2>
   </header>
 );
 
