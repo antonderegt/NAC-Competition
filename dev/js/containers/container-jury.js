@@ -21,6 +21,7 @@ class Jury extends Component {
                   containerDiv="jury-big"
                   nameDiv="jury-big-name"
                   descDiv="jury-big-desc"
+                  imageSize="big"
                     desc={jury.descLong}
                 />
               )
@@ -33,6 +34,7 @@ class Jury extends Component {
                   containerDiv="jury-small"
                   nameDiv="jury-small-name"
                   descDiv="jury-desc"
+                  imgageSize="small"
                     desc={jury.descShort}
                 />
               )
