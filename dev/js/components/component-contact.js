@@ -13,7 +13,7 @@ const ContactComponent = (props) => (
       Meer informatie is te vinden op de site van:&nbsp;
       <a href="https://www.pleitgenootschap-eggens.nl" target="_blank" rel="noopener">Pleitgenootschap Eggens</a>.<br /><br />
 
-      Op de dag zelf zijn de volgende twee nummers bereikbaar voor vragen:<br />Carine de Roos: <b>06 - 462 100 02</b><br />Tess Lont: <b>06 - 287 057 20</b>.<br /><br /><br /><br />
+      Op de dag zelf zijn de volgende twee nummers bereikbaar voor vragen:<br />Tess Lont: <b>06 - 287 057 20</b><br />Carina de Roos: <b>06 - 462 100 02</b><br /><br /><br /><br />
 
       <p style={styles}>
         <i><b>Built by <a href="https://ditisanton.nl" target="_blank" rel="noopener">Anton de Regt</a></b></i>
